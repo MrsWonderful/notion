@@ -20,27 +20,27 @@ body{
   letter-spacing: 5px;
 }
 
-.dias, .horas, .minutos, .segundos {
+.days, .hours, .minutes, .seconds {
   display: inline-block;
   padding: 20px;
   width: 100px;
   border-radius: 5px;
 }
 
-.dias {
+.days {
   background: #a29890;
 }
 
-.horas {
+.hours {
   background: #aea59e;
   color: #eeeeee;
 }
 
-.minutos {
+.minutes {
   background: #c5bfba;
 }
 
-.segundos {
+.seconds {
   background: #dcd9d6;
 }
 
@@ -88,14 +88,14 @@ body{
     
 <div id="timer">
 
-    <div class="dias"> 
-        <div id="dias" class="numbers "> </div>dias</div> 
-      <div class="horas"> 
-        <div  id="horas" class="numbers"> </div>horas</div> 
-      <div class="minutos"> 
-        <div  id="minutos" class="numbers"> </div>minutos</div> 
-      <div   class="segundos"> 
-        <div id="segundos" class="numbers"> </div>segundos</div> 
+    <div class="days"> 
+        <div id="days" class="numbers "> </div>days</div> 
+      <div class="hours"> 
+        <div  id="hours" class="numbers"> </div>hours</div> 
+      <div class="minutes"> 
+        <div  id="minutes" class="numbers"> </div>minutes</div> 
+      <div   class="seconds"> 
+        <div id="seconds" class="numbers"> </div>seconds</div> 
       </div>
 
 </div>
@@ -116,10 +116,10 @@ let timer = setInterval(function() {
   const diff = myDate - today;
 
   // math
-  let dias = Math.floor(diff / (1000 * 60 * 60 * 24));
-  let horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutos = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  let segundos = Math.floor((diff % (1000 * 60)) / 1000);
+  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
   // display
   document.getElementById("days").innerHTML=days
