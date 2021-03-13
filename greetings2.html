@@ -139,10 +139,10 @@ document.getElementById('sec').innerHTML = seconds;
 }
 
 function twentyfourHour(hour) {
-if (hour > 24) {
-    return hour -= 24 
+if (hour > 23) {
+    return hour -= 23 
 } else if (hour === 0) {
-    return hour = 24;
+    return hour = 23;
 } else {
     return hour
 }
